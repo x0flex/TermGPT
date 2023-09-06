@@ -4,7 +4,6 @@ import nltk
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 import requests
 
-# Chargez la configuration depuis un fichier JSON
 def load_config(config_path="config.json"):
     try:
         with open(config_path, "r") as config_file:
@@ -14,11 +13,9 @@ def load_config(config_path="config.json"):
         print("Le fichier de configuration n'a pas été trouvé. Veuillez créer un fichier 'config.json' avec votre clé d'API.")
         exit(1)
 
-# Initialisation de l'analyseur de sentiment
 nltk.download('vader_lexicon')
 sia = SentimentIntensityAnalyzer()
 
-# Fonction pour détecter l'humeur
 def detect_mood(text):
     sentiment = sia.polarity_scores(text)
     if sentiment['compound'] >= 0.05:
@@ -28,7 +25,6 @@ def detect_mood(text):
     else:
         return "neutre"
 
-# Fonction pour interagir avec l'API GPT-3
 def ask_gpt3(prompt, max_tokens=50):
     config = load_config()
     api_key = config.get("api_key")
@@ -50,7 +46,6 @@ def ask_gpt3(prompt, max_tokens=50):
         print("Une erreur s'est produite lors de la requête à l'API GPT-3:", str(e))
         return None
 
-# Fonction pour effectuer une recherche sur le web
 def search_web(query):
     api_key = "VOTRE_CLE_API"
     search_engine_id = "VOTRE_ID_MOTEUR_DE_RECHERCHE"
@@ -60,14 +55,12 @@ def search_web(query):
     response = requests.get(url)
     data = response.json()
 
-    # Traitez et affichez les résultats
     if 'items' in data:
         for item in data['items']:
             print(item['title'], item['link'])
     else:
         print("Aucun résultat trouvé.")
 
-# Fonction pour gérer une conversation
 def chat():
     conversation = []
     
@@ -96,7 +89,6 @@ def chat():
             print("ChatGPT:", response)
             conversation.append(f"ChatGPT: {response}")
 
-# Fonction d'aide
 def show_help():
     print("Commandes disponibles:")
     print("- 'exit' ou 'quit' : pour quitter le chat.")
@@ -104,7 +96,6 @@ def show_help():
     print("- 'clear' : pour effacer la conversation.")
     print("- 'Recherche : [votre recherche]' : pour effectuer une recherche sur le web.")
 
-# Boucle principale
 while True:
     command = input("\nTapez 'chat' pour commencer ou 'quit' pour quitter: ")
     
