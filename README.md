@@ -14,7 +14,7 @@ Pour commencer
 2. Installez les packages python requis en exécutant la commande suivante :
 
  ```
-   pip install openai json nltk.sentiment.vader requests
+   pip install openai json nltk.sentiment.vader requests -y
  ```
 
 3. Configurez vos clés API :
