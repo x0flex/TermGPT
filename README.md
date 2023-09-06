@@ -1,4 +1,4 @@
-## TermGPT
+## - TermGPT by Xeush0flex...🤖
 
 <div align="center">
  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="200" alt="python logo"  />
