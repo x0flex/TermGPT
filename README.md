@@ -40,8 +40,8 @@ Fonctionnalités
 Utilisation
 
 - Tapez `chat` pour commencer une conversation avec TermiFlex.
-- Tapez `exit` ou "quitter" pour quitter la discussion.
-- Tapez `aide` pour afficher la liste des commandes disponibles.
+- Tapez `exit` ou "quit" pour quitter la discussion.
+- Tapez `help` pour afficher la liste des commandes disponibles.
 - Tapez `clear` pour supprimer l'historique de la conversation.
 - Tapez `save` pour enregistrer la conversation actuelle.
 - Tapez `charger` pour charger une conversation précédemment enregistrée.
