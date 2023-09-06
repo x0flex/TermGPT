@@ -13,21 +13,21 @@ Pour commencer
 
 2. Installez les packages python requis en exécutant la commande suivante :
 
-'''
+ ```
    pip install openai json nltk.sentiment.vader requests
-'''
+ ```
 
 3. Configurez vos clés API :
 
-   - API OpenAI : Remplacez 'VOTRE_CLE_API_OPENAI' dans config.json par votre clé API OpenAI.
-   - API Google Custom Search JSON : Remplacez 'VOTRE_CLE_API' et 'VOTRE_ID_MOTEUR_DE_RECHERCHE' dans le code par votre clé API Google et votre ID de moteur de recherche personnalisé.
-   - API Open Exchange Rates : Remplacez 'VOTRE_CLE_API_EXCHANGE_RATE' dans le code par votre clé API Open Exchange Rates.
+   - API OpenAI : Remplacez `VOTRE_CLE_API_OPENAI` dans config.json par votre clé API OpenAI.
+   - API Google Custom Search JSON : Remplacez `VOTRE_CLE_API` et `VOTRE_ID_MOTEUR_DE_RECHERCHE` dans le code par votre clé API Google et votre ID de moteur de recherche personnalisé.
+   - API Open Exchange Rates : Remplacez `VOTRE_CLE_API_EXCHANGE_RATE` dans le code par votre clé API Open Exchange Rates.
 
 4. Démarrez le chatbot en exécutant :
 
-'''
+ ```
    python termgpt.py
-'''
+ ```
 
 Fonctionnalités
 
@@ -39,12 +39,12 @@ Fonctionnalités
 
 Utilisation
 
-- Tapez "chat" pour commencer une conversation avec TermiFlex.
-- Tapez "exit" ou "quitter" pour quitter la discussion.
-- Tapez "aide" pour afficher la liste des commandes disponibles.
-- Tapez "clear" pour supprimer l'historique de la conversation.
-- Tapez "save" pour enregistrer la conversation actuelle.
-- Tapez "charger" pour charger une conversation précédemment enregistrée.
+- Tapez `chat` pour commencer une conversation avec TermiFlex.
+- Tapez `exit` ou "quitter" pour quitter la discussion.
+- Tapez `aide` pour afficher la liste des commandes disponibles.
+- Tapez `clear` pour supprimer l'historique de la conversation.
+- Tapez `save` pour enregistrer la conversation actuelle.
+- Tapez `charger` pour charger une conversation précédemment enregistrée.
 
 ## Contribuer
 
